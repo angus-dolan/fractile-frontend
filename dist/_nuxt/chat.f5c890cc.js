@@ -1,0 +1,1 @@
+import{aT as r}from"./entry.c8cb6bef.js";import{a as t}from"./chat.09be6870.js";const o=r((a,i)=>{const e=t();a.name==="index"||a.name==="chat"?e.draftConversation():a.name==="chat-id"&&typeof a.params.id=="string"&&e.restoreConversation(a.params.id)});export{o as default};

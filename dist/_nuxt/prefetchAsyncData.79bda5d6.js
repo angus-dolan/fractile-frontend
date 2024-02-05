@@ -1,0 +1,1 @@
+import{aT as n,aU as o}from"./entry.c8cb6bef.js";import{b as r,a as c}from"./chat.09be6870.js";const p=n(async(a,i)=>{let e,t;const s=r();c(),["index","chat","chat-id"].includes(a.name)&&([e,t]=o(()=>s.fetchAll()),await e,t())});export{p as default};

@@ -1,0 +1,59 @@
+$sizes: (
+  "display-1": 2.75rem,
+  "display-2": 2.5rem,
+  "display-3": 1.875rem,
+  "h1": 2.25rem,
+  "h2": 1.875rem,
+  "h3": 1.3125rem,
+  "h4": 1.125rem,
+  "h5": 1rem,
+  "h6": 0.875rem,
+  "text-10": 0.625rem,
+  "text-12": 0.75rem,
+  "text-14": 0.875rem,
+  "text-18": 1.125rem,
+  "text-20": 1.25rem,
+  "text-24": 1.5rem,
+  "body-text-1": 0.625rem,
+);
+
+@each $pixel, $size in $sizes {
+  .#{$pixel} {
+    font-size: $size;
+    line-height: $size + 10;
+  }
+}
+
+.textSecondary {
+  color: rgb(var(--v-theme-textSecondary)) !important;
+}
+
+.textPrimary {
+  color: rgb(var(--v-theme-textPrimary)) !important;
+}
+
+// line height
+
+.lh-md {
+  line-height: 1.57;
+}
+
+.font-weight-semibold {
+  font-weight: 600;
+}
+
+// hover text
+.text-hover-primary {
+  color: rgb(var(--v-theme-textPrimary));
+  &:hover {
+    color: rgb(var(--v-theme-primary));
+  }
+}
+
+.link {
+  color: rgb(var(--v-theme-textSecondary));
+  text-decoration: none;
+  &:hover {
+    color: rgb(var(--v-theme-primary));
+  }
+}
